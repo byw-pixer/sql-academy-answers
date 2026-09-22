@@ -40,9 +40,9 @@ WHERE plane = 'Boeing' AND Company.id = Trip.company;
 
 **Task №7:** _Вывести все названия самолётов, на которых можно улететь в Москву (Moscow)._
 ```sql
-SELECT DISTINCT name
-FROM Company, Trip
-WHERE plane = 'Boeing' AND Company.id = Trip.company;
+SELECT DISTINCT plane 
+from Trip
+WHERE town_to = 'Moscow';
 ```
 
 **Task №8:** _В какие города можно улететь из Парижа (Paris) и сколько времени это займёт?_
